@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="howManyFinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisscc0-light-bokeh-east-15-acting-school-royalty-free-dar-life-5afd7797289825.3312500015265606631663" translatesAutoresizingMaskIntoConstraints="NO" id="2i3-y3-3PP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="8s2-tn-419"/>
+                                    <constraint firstAttribute="width" constant="375" id="m3N-qU-vzM"/>
+                                    <constraint firstAttribute="width" secondItem="2i3-y3-3PP" secondAttribute="height" multiplier="375:667" id="t8m-PF-ODK"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess how many Fingers?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q6-CY-D2y">
+                                <rect key="frame" x="0.0" y="96" width="375" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tf3-Y9-lP6">
+                                <rect key="frame" x="74" y="145" width="231" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-ln-EVp">
+                                <rect key="frame" x="151" y="230" width="72" height="30"/>
+                                <state key="normal" title="Check"/>
+                                <connections>
+                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohc-Pb-b58"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-2X-qBo">
+                                <rect key="frame" x="16" y="303" width="347" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Use-9H-OAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wra-ln-EVp" firstAttribute="top" secondItem="tf3-Y9-lP6" secondAttribute="bottom" constant="55" id="7MI-6X-28e"/>
+                            <constraint firstItem="7q6-CY-D2y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9mI-K0-pQ6"/>
+                            <constraint firstItem="2i3-y3-3PP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CZB-ST-weA"/>
+                            <constraint firstAttribute="trailing" secondItem="7q6-CY-D2y" secondAttribute="trailing" id="Fzc-eu-vNL"/>
+                            <constraint firstItem="Wra-ln-EVp" firstAttribute="centerX" secondItem="tf3-Y9-lP6" secondAttribute="centerX" id="G6Z-2p-Vv6"/>
+                            <constraint firstItem="tf3-Y9-lP6" firstAttribute="top" secondItem="7q6-CY-D2y" secondAttribute="bottom" constant="17" id="LSx-yu-kW1"/>
+                            <constraint firstItem="tf3-Y9-lP6" firstAttribute="centerX" secondItem="7q6-CY-D2y" secondAttribute="centerX" constant="2" id="NJf-nB-4Mj"/>
+                            <constraint firstItem="tf3-Y9-lP6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="O8k-6C-O7t"/>
+                            <constraint firstItem="mp2-2X-qBo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OUE-Wr-HQf"/>
+                            <constraint firstItem="2i3-y3-3PP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cuO-Fp-X7D"/>
+                            <constraint firstItem="mp2-2X-qBo" firstAttribute="top" secondItem="Wra-ln-EVp" secondAttribute="bottom" constant="20" id="dQg-JY-ag0"/>
+                            <constraint firstItem="7q6-CY-D2y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="ez9-ob-0d4"/>
+                            <constraint firstItem="Wra-ln-EVp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="kwV-u0-ahs"/>
+                            <constraint firstItem="2i3-y3-3PP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xez-vx-cEB"/>
+                            <constraint firstItem="mp2-2X-qBo" firstAttribute="centerX" secondItem="Wra-ln-EVp" secondAttribute="centerX" constant="2.5" id="z0G-Jd-RXs"/>
+                            <constraint firstAttribute="bottom" secondItem="2i3-y3-3PP" secondAttribute="bottom" id="zYI-BM-kI9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputNumber" destination="tf3-Y9-lP6" id="vLE-pX-Cuc"/>
+                        <outlet property="result" destination="mp2-2X-qBo" id="uqQ-2d-WHS"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kisscc0-light-bokeh-east-15-acting-school-royalty-free-dar-life-5afd7797289825.3312500015265606631663" width="1524" height="935.4000244140625"/>
+    </resources>
+</document>
